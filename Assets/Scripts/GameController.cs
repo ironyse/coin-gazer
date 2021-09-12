@@ -67,8 +67,8 @@ public class GameController : MonoBehaviour
 
         CheckResourceCost();
 
-        CoinIcon.transform.localScale = Vector3.LerpUnclamped(CoinIcon.transform.localScale, Vector3.one * 2f, 0.15f);
-        CoinIcon.transform.Rotate(0f, 0f, Time.deltaTime * -100f);
+        CoinIcon.transform.localScale = Vector3.LerpUnclamped(CoinIcon.transform.localScale, Vector3.one * 1.5f, 0.15f);
+        CoinIcon.transform.Rotate(0f, Time.deltaTime * -100f, 0f);
     }
 
     void AddShopItems()
